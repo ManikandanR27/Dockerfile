@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+Path should C:\Users\Yourname\Documents\knowledge(project location)>
+1) Added the Dockerfile and .dockerignore file
+2) Make sure your local has access of docker.
+3) you have to build the docker image for you app using
+docker build -t dist/knowledge .
+4) After image has build check the list of images
+docker images
+5) In this list you see your image then 
+docker run -d -it -p 80:80/tcp --name knowledgedist/knowledge:latest
+6) It will generate one random key
+7) Go to browser and type your ip address.
